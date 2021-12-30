@@ -1,0 +1,24 @@
+[package]
+name = "sunxdcc"
+description = "A small, unofficial wrapper for the SunXDCC search engine"
+license-file = "LICENSE"
+version = "0.1.0"
+authors = ["William Woodruff <william@yossarian.net>"]
+edition = "2021"
+readme = "README.md"
+homepage = "https://github.com/woodruffw/sunxdcc"
+repository = "https://github.com/woodruffw/sunxdcc"
+keywords = ["irc", "dcc", "ctcp", "xdcc", "web", "api"]
+categories = ["network-programming"]
+
+[package.metadata.release]
+dev-version = false
+publish = false # handled by GitHub Actions
+push = true
+
+[dependencies]
+itertools = "0.10"
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0"
+url = "2.0"

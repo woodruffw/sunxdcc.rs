@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Format
+        run: cargo fmt && git diff --exit-code
+      - name: Lint
+        run: |
+          rustup update
+          rustup component add clippy
+          cargo clippy -- \
+            -D warnings -D clippy::expect_used -D clippy::unwrap_used -D clippy::panic
+  build:
+    strategy:
+      matrix:
+        platform: ["ubuntu-latest", "macos-latest"]
+    runs-on: ${{ matrix.platform }}
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build
+      run: cargo build
+
+    - name: Doc
+      run: cargo doc
