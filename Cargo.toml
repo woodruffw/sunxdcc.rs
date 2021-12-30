@@ -8,7 +8,7 @@ edition = "2021"
 readme = "README.md"
 homepage = "https://github.com/woodruffw/sunxdcc"
 repository = "https://github.com/woodruffw/sunxdcc"
-keywords = ["irc", "dcc", "ctcp", "xdcc", "web", "api"]
+keywords = ["irc", "dcc", "ctcp", "xdcc", "api"]
 categories = ["network-programming"]
 
 [package.metadata.release]
