@@ -2,7 +2,7 @@
 name = "sunxdcc"
 description = "A small, unofficial wrapper for the SunXDCC search engine"
 license-file = "LICENSE"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["William Woodruff <william@yossarian.net>"]
 edition = "2021"
 readme = "README.md"
