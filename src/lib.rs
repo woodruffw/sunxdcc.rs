@@ -159,7 +159,7 @@ impl<'search> SearchResults<'search> {
     ///
     /// This function doesn't check whether the current results have been fully consumed;
     /// callers must take care to fully consume all current results to avoid silently
-    ///
+    /// skipping results.
     fn refresh(&mut self) -> Result<(), Error> {
         self.current_results.clear();
 
