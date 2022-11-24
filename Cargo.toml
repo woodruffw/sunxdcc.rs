@@ -6,8 +6,8 @@ version = "0.1.1"
 authors = ["William Woodruff <william@yossarian.net>"]
 edition = "2021"
 readme = "README.md"
-homepage = "https://github.com/woodruffw/sunxdcc"
-repository = "https://github.com/woodruffw/sunxdcc"
+homepage = "https://github.com/woodruffw/sunxdcc.rs"
+repository = "https://github.com/woodruffw/sunxdcc.rs"
 keywords = ["irc", "dcc", "ctcp", "xdcc", "api"]
 categories = ["network-programming"]
 
