@@ -2,7 +2,7 @@ sunxdcc.rs
 ==========
 
 ![license](https://raster.shields.io/badge/license-MIT%20with%20restrictions-green.png)
-[![Build Status](https://img.shields.io/github/workflow/status/woodruffw/sunxdcc.rs/CI/master)](https://github.com/woodruffw/sunxdcc.rs/actions?query=workflow%3ACI)
+[![CI](https://github.com/woodruffw/sunxdcc.rs/actions/workflows/ci.yml/badge.svg)](https://github.com/woodruffw/sunxdcc.rs/actions/workflows/ci.yml)
 [![Crates.io](https://img.shields.io/crates/v/sunxdcc)](https://crates.io/crates/sunxdcc)
 [![Documentation](https://docs.rs/sunxdcc/badge.svg)](https://docs.rs/sunxdcc)
 
