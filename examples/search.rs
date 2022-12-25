@@ -1,7 +1,5 @@
 use std::env;
 
-
-
 fn main() {
     let query = env::args().nth(1).unwrap();
 
